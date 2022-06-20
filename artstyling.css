@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    background:#F0F2F2;
+    text-align: center;
+    font-weight: 500;
+}
+/*--navbar--*/
+.navbar-brand{
+  font-size:25px; 
+  font-weight: 700; 
+}
+.navbar{
+    padding: 0;
+}
+.nav-link{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.nav-link:active{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*--Carousel--*/
+.carousel-item{
+    height: 600px;
+    background: no-repeat center scroll;
+    background-size: cover;
+    opacity: 0.9;
+}
+.carousel-caption{
+    margin-bottom: 40px;
+     padding-left: 600px;
+     padding-right: 100px;
+ }
+ .carousel-caption p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 100; 
+ }
+/*--Artists--*/ 
+.card-title{
+    color: #101010;
+    text-align: center;
+    font-style: italic;
+}
+.btn{
+    width: 110px;
+    border: solid #000 1px;
+    border-radius: 0;
+}
+.img-fluid{
+    border: solid #000 1px;
+    padding: 10px;
+}
+/* footer */
+.footer{
+    background: #101010;
+}
+.footeranchor{
+    color: #E3E2E2;
+    text-decoration: none;    
+}
+.footeranchor:hover{
+    color: #8F8F8F;
+}
+.email{
+    color: #5BDD04;
+    text-decoration: none;
+}
+.email:hover{
+    color: #8F8F8F;
+}
+.footerp{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+hr{
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+
