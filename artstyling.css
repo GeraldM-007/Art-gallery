@@ -5,8 +5,25 @@
 }
 .header{
     background:#F0F2F2;
+}
+p.header{
     text-align: center;
-    font-weight: 500;
+    font-weight: 500; 
+}
+#signin{
+    color: #000;
+}
+#dropdownbutton{
+   border-style: none;
+   background: #fff;
+
+}
+.dropdown-menu{
+    border: none;
+    border-radius: 0;
+}
+.dropdown-item{
+    font-size: 16px;
 }
 /*--navbar--*/
 .navbar-brand{
@@ -39,14 +56,14 @@
     opacity: 0.9;
 }
 .carousel-caption{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
      padding-left: 600px;
      padding-right: 100px;
  }
  .carousel-caption p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
-    font-weight: 100; 
+    font-weight: 100;
  }
 /*--Artists--*/ 
 .card-title{
@@ -89,4 +106,3 @@ hr{
     background-color: #ccc;
     border: none;
 }
-

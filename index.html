@@ -8,9 +8,37 @@
     <link rel="stylesheet" href="artstyling.css">
   </head>
   <body>
-    <div class="header pb-3 pt-3">
-      <p>Bringing art to kenyans</p> 
-    </div>
+    <!--header-->
+    <section>
+      <div class="container-fluid m-0 p-0">
+        <div class="row header">
+          <div class="col-md">
+            <p class="header p-3 float-start">Bringing art to kenyans</p>
+          </div>
+          <div class="col-md">
+            <nav class="navbar navbar-expand p-2 float-end">
+                <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"  id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle nav-link-header" href="#" id="signin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sign in
+                      </a>
+                      <ul class="dropdown-menu " aria-labelledby="signin">
+                        <li> <button type="button" class="btn btn-light " id="dropdownbutton">Log in</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li> <button type="button" class="btn btn-light " id="dropdownbutton">Log out</button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
       <!--navbar-->
             <nav class="navbar navbar-expand-lg m-3">
               <div class="container-fluid">
@@ -62,28 +90,28 @@
                 </div>
               </div>
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Art" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search by location/name" aria-label="Search">
+                <button class="btn btn-outline-success searchbutton" type="submit">Search</button>
               </form>
             </nav>
             <!--Carousel-->
             <section>
-              <div class="container-fluid carousel-fade">
+              <div class="container-fluid carousel-fade m-0 p-0">
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="carousel-item active" data-bs-interval="5000">
                       <img src="carousel1.jpeg" class="d-block w-100 h-100" alt="The art genre">
                       <div class="carousel-caption d-none d-md-block">
                         <p>"Art speaks where words are unable to explain."</p>
                       </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="5000">
                       <img src="carousel4.jpeg" class="d-block w-100 h-100" alt="The art genre">
                       <div class="carousel-caption d-none d-md-block">
                         <p>"paintings,like dreams, they have a life of their own."</p>
                       </div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="5000">
                       <img src="carousel7.jpeg" class="d-block w-100 h-100" alt="The art genre">
                       <div class="carousel-caption d-none d-md-block">
                         <p>"Don't paint the world you see, paint the world you feel."</p>
@@ -163,17 +191,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Whats new-->
-              <section>
-                <div class="container">
-                  <div class="col-md">
-
-                  </div>
-                  <div class="col-md">
-
-                  </div>
-                </div>
-              </section>
               <!--artists B-->
               <div class="container">
                 <div class="row g-4">
