@@ -48,6 +48,16 @@ p.header{
     font-size: 20px;
     font-weight: 500;
 }
+/*learn*/
+#learn{
+    background-color: #F6F6F6;
+}
+#learn-btn{
+    width: 200px;
+    border: solid #000 1px;
+    border-radius: 0; 
+    background-color: #fff;
+}
 /*--Carousel--*/
 .carousel-item{
     height: 600px;
@@ -76,7 +86,7 @@ p.header{
     border: solid #000 1px;
     border-radius: 0;
 }
-.img-fluid{
+.card-img-top{
     border: solid #000 1px;
     padding: 10px;
 }
@@ -105,4 +115,12 @@ hr{
     height: 1px;
     background-color: #ccc;
     border: none;
+}
+/*featured */
+h6{
+    font-size: 44px;
+    font-family: serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
