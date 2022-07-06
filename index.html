@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="artstyling.css">
     <script type="text/javascript" src="artified.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+</script>
   </head>
   <body>
     <!--header-->
@@ -25,11 +29,11 @@
                 <div class="collapse navbar-collapse"  id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle nav-link-header" href="#" id="signin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link  nav-link-header" href="#" id="signin" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Sign in
                       </a>
                       <ul class="dropdown-menu " aria-labelledby="signin">
-                        <li> <a href="Create-account.html"><button type="button" class="btn btn-light " id="dropdownbutton">Log in</button></a></li>
+                        <button type="button" id="dropdownbutton"  onclick="signIn()" class="btn btn-light ">login</button>
                         <li><hr class="dropdown-divider"></li>
                         <li> <button type="button" class="btn btn-light " id="dropdownbutton">Log out</button></li>
                       </ul>
@@ -44,7 +48,7 @@
       <!--navbar-->
             <nav class="navbar navbar-expand-md m-3">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                   <span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-easel2-fill" viewBox="0 0 16 16">
                     <path d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809L8.447.276Z"/>
@@ -57,36 +61,43 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle" href="artists/artists.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Artists
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Dain Jarvis</a></li>
+                        <li><a class="dropdown-item" href="#"> Jarvis T</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Cecilia Christo</a></li>
+                        <li><a class="dropdown-item" href="#">Janet Wanjiru</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Simeone Anthony</a></li>
+                        <li><a class="dropdown-item" href="#">John clement</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Picaso Obuya</a></li>
+                        <li><a class="dropdown-item" href="#">Jasper Murume</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Alex T</a></li>
+                        <li><a class="dropdown-item" href="#">Alex Kimani</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Lady Zuena</a></li>
+                        <li><a class="dropdown-item" href="#">Hassan Ali</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Arthur G</a></li>
+                        <li><a class="dropdown-item" href="#">Mark Nzioki</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Robert Kamau</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Amwatah Obuya</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Stellamaris Ngami</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Bridgit Nyambura</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Becky Mwende</a></li>
                       </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Locations</a>
+                      <a class="nav-link" href="#footer">About us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#footer">Contacts</a>
                     </li>
                   </ul>
                 </div>
@@ -142,7 +153,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Dain Jarvis/image2.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Dain Jarvis</h5>
+                        <h5 class="card-title mb-3 mt-3"> Jarvis T</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -151,7 +162,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Cecilia Christo/image2.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Cecilia Christo</h5>
+                        <h5 class="card-title mb-3 mt-3"> Janet Wanjiru</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -160,13 +171,16 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Simeone Anthony/image2.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Simeone Anthony</h5>
+                        <h5 class="card-title mb-3 mt-3"> John Clement</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
                   </div>
                 </div>
            <!-- learn section-->
+           <div class="container">
+            <hr>
+          </div>
            <section class="p-5">
             <div class="container justify-content-center">
                  <div class="row align-items-center justify-content-between" id="learn">
@@ -174,12 +188,12 @@
                          <img src="learn-img2.jpeg" class="img-fluid" alt="">
                      </div>
                      <div class="col-md p-5">
-                         <h2>Find What you Love</h2>
+                         <h3>Find What you Love</h3>
                          <p>"At Artified we have made it our mission to connect kenyan art lovers and kenyan 
                            art artists. We are passionate about art thus bringing the best from Kenya."
                          </p>
-                             <a href="#" class="btn btn-light mt-3"> 
-                                 <i class="bi bi-chevron-right"></i> Go to artists</a>
+                             <a href="artists/artists.html" class="btn btn-light mt-3"> 
+                                 <i class="bi bi-chevron-right"></i> See Featured artists</a>
                      </div>
                  </div>
              </div>
@@ -192,8 +206,8 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Dain Jarvis/artist1.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Dain Jarvis</h5>
-                        <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
+                        <h5 class="card-title mb-3 mt-3"> Jasper Murume</h5>
+                        <a href="artists/Dain Jarvis/Dainjarvis.html" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
                   </div>
@@ -201,7 +215,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Cecilia Christo/image1.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Cecilia Christo</h5>
+                        <h5 class="card-title mb-3 mt-3"> Alex Kimani</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -210,7 +224,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Simeone Anthony/image3.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Simeone Anthony</h5>
+                        <h5 class="card-title mb-3 mt-3"> Hassan Ali </h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -229,12 +243,12 @@
                   <div class="row align-items-center justify-content-between mt-3">
                     <div class="col-md">
                         <img src="featured.jpeg" alt="" class="img-fluid" style="height: 40rem; width:35rem;">
-                        <h2 class="mt-3 mb-3">INSPIRATIONAL</h2>
+                        <h3 class="mt-3 mb-3">INSPIRATIONAL</h3>
                         <p class="mt-3 mb-3">Discover art that will inspire you.</p>
                     </div>
                     <div class="col-md">
                       <img src="featured3.jpeg" alt="" class="img-fluid" style="height: 40rem; width:35rem;">
-                       <h2 class="mt-3 mb-3">CAPTIVATING</h2>
+                       <h3 class="mt-3 mb-3">CAPTIVATING</h3>
                         <p class="mt-3 mb-3">Discover art that will capture you eyes, <br>
                            mind and soul.
                         </p>
@@ -252,7 +266,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Dain Jarvis/image2.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Dain Jarvis</h5>
+                        <h5 class="card-title mb-3 mt-3"> Mark Nzioki</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -261,7 +275,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Cecilia Christo/image2.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Cecilia Christo</h5>
+                        <h5 class="card-title mb-3 mt-3"> Robert Kamau</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -270,7 +284,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Simeone Anthony/image2.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Simeone Anthony</h5>
+                        <h5 class="card-title mb-3 mt-3"> Amwatah Obuya</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -284,7 +298,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Dain Jarvis/artist1.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Dain Jarvis</h5>
+                        <h5 class="card-title mb-3 mt-3"> Stellamaris Ngami</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -293,7 +307,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Cecilia Christo/image1.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Cecilia Christo</h5>
+                        <h5 class="card-title mb-3 mt-3"> Bridgit Nyambura</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -302,7 +316,7 @@
                     <div class="card-body text-center mt-5 mb-5" style="width: 18rem;">
                       <img src="Simeone Anthony/image3.jpeg" class="card-img-top img-fluid" alt="artist Number One">
                       <div class="card-body">
-                        <h5 class="card-title mb-3 mt-3"> Simeone Anthony</h5>
+                        <h5 class="card-title mb-3 mt-3"> Becky Mwende</h5>
                         <a href="#" class="btn  mt-3 mb-3" id="card-button">INQUIRE</a>
                       </div>
                     </div>
@@ -314,7 +328,7 @@
               <hr>
             </div>
             <!--footer-->
-            <section class="footer">
+            <section class="footer" id="footer">
               <div class="container ">
                 <div class="row align-content-center justify-content-between">
                   <div class="col-md text-light mt-4 mb-4">
